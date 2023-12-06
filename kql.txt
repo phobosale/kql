@@ -1,0 +1,928 @@
+SysmonEvent | where ImageLoaded =~ @'*\acrodistdll.dll' and  not ImageLoaded in~ (@'c:\program files\Adobe\Acrobat *\Acrobat\*', @'c:\program files (x86)\Adobe\Acrobat *\Acrobat\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vender.dll' and  not ImageLoaded in~ (@'c:\program files\ASUS\GPU TweakII\*', @'c:\program files (x86)\ASUS\GPU TweakII\*', @'c:\program files\ASUS\VGA COM\*\*', @'c:\program files (x86)\ASUS\VGA COM\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wsc.dll' and  not ImageLoaded in~ (@'c:\program files\AVAST Software\Avast\*', @'c:\program files (x86)\AVAST Software\Avast\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\basicnetutils.dll' and  not ImageLoaded in~ (@'c:\users\*\appdata\local\Temp\*\Application2\*', @'c:\program files\BAIDU\BAIDUPINYIN\*\*', @'c:\program files (x86)\BAIDU\BAIDUPINYIN\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\log.dll' and  not ImageLoaded in~ (@'c:\program files\Bitdefender Antivirus Free\*', @'c:\program files (x86)\Bitdefender Antivirus Free\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ciscosparklauncher.dll' and  not ImageLoaded =~ @'c:\users\*\appdata\local\CiscoSparkLauncher\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\classicexplorer32.dll' and  not ImageLoaded in~ (@'c:\program files\Classic Shell\*', @'c:\program files (x86)\Classic Shell\*', @'c:\program files\Open-Shell\*', @'c:\program files (x86)\Open-Shell\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vftrace.dll' and  not ImageLoaded in~ (@'c:\program files\CyberArk\Endpoint Privilege Manager\Agent\x32\*', @'c:\program files (x86)\CyberArk\Endpoint Privilege Manager\Agent\x32\*', @'c:\program files\CyberArk\Endpoint Privilege Manager\Agent\x64\*', @'c:\program files (x86)\CyberArk\Endpoint Privilege Manager\Agent\x64\*', @'c:\program files\CyberArk\Endpoint Privilege Manager\Agent\*', @'c:\program files (x86)\CyberArk\Endpoint Privilege Manager\Agent\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\qrt.dll' and  not ImageLoaded in~ (@'c:\program files\F-Secure\Anti-Virus\*', @'c:\program files (x86)\F-Secure\Anti-Virus\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\chrome_frame_helper.dll' and  not ImageLoaded in~ (@'c:\users\*\appdata\local\Google\Chrome\Application\*', @'c:\program files\Google\Chrome\Application\*', @'c:\program files (x86)\Google\Chrome\Application\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\hpcustpartui.dll' and  not ImageLoaded in~ (@'c:\program files\HP\*', @'c:\program files (x86)\HP\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\hpqhvsei.dll' and  not ImageLoaded in~ (@'c:\program files\HP\*', @'c:\program files (x86)\HP\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\commfunc.dll' and  not ImageLoaded in~ (@'c:\program files\Lenovo\Communications Utility\*', @'c:\program files (x86)\Lenovo\Communications Utility\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\lmiguardiandll.dll' and  not ImageLoaded in~ (@'c:\program files\LogMeIn\*', @'c:\program files (x86)\LogMeIn\*', @'c:\program files\LogMeIn\x86\*', @'c:\program files (x86)\LogMeIn\x86\*', @'c:\program files\LogMeIn\x64\*', @'c:\program files (x86)\LogMeIn\x64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\facesdk.dll' and  not ImageLoaded in~ (@'c:\program files\luxand\facesdk\bin\win64\*', @'c:\program files (x86)\luxand\facesdk\bin\win64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ashldres.dll' and  not ImageLoaded in~ (@'c:\program files\McAfee.com\VSO\*', @'c:\program files (x86)\McAfee.com\VSO\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\lockdown.dll' and  not ImageLoaded in~ (@'c:\program files\McAfee\VirusScan Enterprise\*', @'c:\program files (x86)\McAfee\VirusScan Enterprise\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\siteadv.dll' and  not ImageLoaded in~ (@'c:\program files\SiteAdvisor\*\*', @'c:\program files (x86)\SiteAdvisor\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vsodscpl.dll' and  not ImageLoaded in~ (@'c:\program files\McAfee\VirusScan Enterprise\*', @'c:\program files (x86)\McAfee\VirusScan Enterprise\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mozglue.dll' and  not ImageLoaded in~ (@'c:\program files\SeaMonkey\*', @'c:\program files (x86)\SeaMonkey\*', @'c:\program files\Mozilla Firefox\*', @'c:\program files (x86)\Mozilla Firefox\*', @'c:\program files\Mozilla Thunderbird\*', @'c:\program files (x86)\Mozilla Thunderbird\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\providers.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\nvsmartmax.dll' and  not ImageLoaded in~ (@'c:\program files\NVIDIA Corporation\Display\*', @'c:\program files (x86)\NVIDIA Corporation\Display\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\opera_elf.dll' and  not ImageLoaded =~ @'c:\users\*\appdata\local\programs\opera\*\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winutils.dll' and  not ImageLoaded in~ (@'c:\program files\Palo Alto Networks\Traps\*', @'c:\program files (x86)\Palo Alto Networks\Traps\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\python39.dll' and  not ImageLoaded in~ (@'c:\program files\Python39\*', @'c:\program files (x86)\Python39\*', @'c:\users\*\appdata\local\Temp\*\*', @'c:\program files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\VC\SecurityIssueAnalysis\python\*', @'c:\program files (x86)\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\VC\SecurityIssueAnalysis\python\*', @'%USERPROFILE%\anaconda3\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rzlog4cpp_logger.dll' and  not ImageLoaded =~ @'c:\users\*\appdata\local\razer\InGameEngine\cache\RzFpsApplet\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\smadhook32c.dll' and  not ImageLoaded in~ (@'c:\program files\Smadav\*', @'c:\program files (x86)\Smadav\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\safestore32.dll' and  not ImageLoaded in~ (@'c:\program files\Sophos\Sophos Anti-Virus\*', @'c:\program files (x86)\Sophos\Sophos Anti-Virus\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ldvpocx.ocx' and  not ImageLoaded in~ (@'c:\program files\Symantec_Client_Security\Symantec AntiVirus\*', @'c:\program files (x86)\Symantec_Client_Security\Symantec AntiVirus\*', @'c:\program files\Symantec AntiVirus\*', @'c:\program files (x86)\Symantec AntiVirus\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rastls.dll' and  not ImageLoaded in~ (@'c:\program files\Symantec\Network Connected Devices Auto Setup\*', @'c:\program files (x86)\Symantec\Network Connected Devices Auto Setup\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\shellsel.ocx' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tosbtkbd.dll' and  not ImageLoaded in~ (@'c:\program files\Toshiba\Bluetooth Toshiba Stack\*', @'c:\program files (x86)\Toshiba\Bluetooth Toshiba Stack\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tmdbglog.dll' and  not ImageLoaded in~ (@'c:\program files\Trend Micro\Titanium\*', @'c:\program files (x86)\Trend Micro\Titanium\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tmtap.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\utiluniclient.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\unityplayer.dll' and  not ImageLoaded =~ @'c:\users\*\appdata\local\Temp\*\Windows\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vntfxf32.dll' and  not ImageLoaded in~ (@'c:\program files\Venta\VentaFax & Voice\*', @'c:\program files (x86)\Venta\VentaFax & Voice\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vivaldi_elf.dll' and  not ImageLoaded in~ (@'c:\users\*\appdata\local\Vivaldi\Application\*', @'c:\users\*\appdata\local\Vivaldi\Application\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\libvlc.dll' and  not ImageLoaded in~ (@'c:\program files\VideoLAN\VLC\*', @'c:\program files (x86)\VideoLAN\VLC\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\glib-2.0.dll' and  not ImageLoaded in~ (@'c:\program files\VMware\VMware Tools\*', @'c:\program files (x86)\VMware\VMware Tools\*', @'c:\program files\VMware\VMware Workstation\*', @'c:\program files (x86)\VMware\VMware Workstation\*', @'c:\program files\VMware\VMware Player\*', @'c:\program files (x86)\VMware\VMware Player\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\shfolder.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\x32bridge.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\aclui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\activeds.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\adsldpc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\aepic.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\apphelp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\applicationframe.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\appvpolicy.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\appxalluserstore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\appxdeploymentclient.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\archiveint.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\atl.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\audioses.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\auditpolcore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\authfwcfg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\authz.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\avrt.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\batmeter.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\bcd.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\bcp47langs.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\bcp47mrm.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\bcrypt.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\bderepair.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\bootmenuux.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\bootux.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cabinet.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cabview.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cdpsgshims.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\certcli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\certenroll.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cfgmgr32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cldapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\clipc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\clusapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cmpbk32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cmutil.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\coloradapterclient.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\colorui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\comdlg32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\configmanager2.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\connect.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\coredplus.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\coremessaging.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\coreuicomponents.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\credui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cryptbase.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cryptdll.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cryptsp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cryptui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cryptxml.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cscapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cscobj.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\cscui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d2d1.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3d10.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3d10_1.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3d10_1core.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3d10core.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3d10warp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3d11.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3d12.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3d9.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3dcompiler_47.dll' and  not ImageLoaded in~ (@'c:\program files\windows kits\10\bin\*\x64\*', @'c:\program files (x86)\windows kits\10\bin\*\x64\*', @'c:\program files\windows kits\10\bin\*\x86\*', @'c:\program files (x86)\windows kits\10\bin\*\x86\*', @'c:\program files\windows kits\10\redist\d3d\x64\*', @'c:\program files (x86)\windows kits\10\redist\d3d\x64\*', @'c:\program files\windows kits\10\redist\d3d\x86\*', @'c:\program files (x86)\windows kits\10\redist\d3d\x86\*', @'c:\program files\wireshark\*', @'c:\program files (x86)\wireshark\*', @'c:\program files\cisco systems\cisco jabber\*', @'c:\program files (x86)\cisco systems\cisco jabber\*', @'c:\program files\microsoft\edge\application\*\*', @'c:\program files (x86)\microsoft\edge\application\*\*', @'c:\program files\Google\Chrome\Application\*\*', @'c:\program files (x86)\Google\Chrome\Application\*\*', @'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\d3dx9_43.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dataexchange.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\davclnt.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dbgcore.dll' and  not ImageLoaded in~ (@'c:\program files\windows kits\10\debuggers\arm\*', @'c:\program files (x86)\windows kits\10\debuggers\arm\*', @'c:\program files\windows kits\10\debuggers\arm\srcsrv\*', @'c:\program files (x86)\windows kits\10\debuggers\arm\srcsrv\*', @'c:\program files\windows kits\10\debuggers\arm64\*', @'c:\program files (x86)\windows kits\10\debuggers\arm64\*', @'c:\program files\windows kits\10\debuggers\arm64\srcsrv\*', @'c:\program files (x86)\windows kits\10\debuggers\arm64\srcsrv\*', @'c:\program files\windows kits\10\debuggers\x64\*', @'c:\program files (x86)\windows kits\10\debuggers\x64\*', @'c:\program files\windows kits\10\debuggers\x64\srcsrv\*', @'c:\program files (x86)\windows kits\10\debuggers\x64\srcsrv\*', @'c:\program files\windows kits\10\debuggers\x86\*', @'c:\program files (x86)\windows kits\10\debuggers\x86\*', @'c:\program files\windows kits\10\debuggers\x86\srcsrv\*', @'c:\program files (x86)\windows kits\10\debuggers\x86\srcsrv\*', @'c:\program files\microsoft office\root\office*\*', @'c:\program files (x86)\microsoft office\root\office*\*', @'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dbghelp.dll' and  not ImageLoaded in~ (@'c:\program files\windows kits\10\debuggers\arm\*', @'c:\program files (x86)\windows kits\10\debuggers\arm\*', @'c:\program files\windows kits\10\debuggers\arm\srcsrv\*', @'c:\program files (x86)\windows kits\10\debuggers\arm\srcsrv\*', @'c:\program files\windows kits\10\debuggers\arm64\*', @'c:\program files (x86)\windows kits\10\debuggers\arm64\*', @'c:\program files\windows kits\10\debuggers\arm64\srcsrv\*', @'c:\program files (x86)\windows kits\10\debuggers\arm64\srcsrv\*', @'c:\program files\windows kits\10\debuggers\x64\*', @'c:\program files (x86)\windows kits\10\debuggers\x64\*', @'c:\program files\windows kits\10\debuggers\x64\srcsrv\*', @'c:\program files (x86)\windows kits\10\debuggers\x64\srcsrv\*', @'c:\program files\windows kits\10\debuggers\x86\*', @'c:\program files (x86)\windows kits\10\debuggers\x86\*', @'c:\program files\windows kits\10\debuggers\x86\srcsrv\*', @'c:\program files (x86)\windows kits\10\debuggers\x86\srcsrv\*', @'c:\program files\cisco systems\cisco jabber\*', @'c:\program files (x86)\cisco systems\cisco jabber\*', @'c:\program files\microsoft office\root\office*\*', @'c:\program files (x86)\microsoft office\root\office*\*', @'c:\program files\microsoft office\root\vfs\programfilesx86\microsoft analysis services\as oledb\140\*', @'c:\program files (x86)\microsoft office\root\vfs\programfilesx86\microsoft analysis services\as oledb\140\*', @'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dbgmodel.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*', @'c:\program files\Windows Kits\10\Debuggers\*\*', @'c:\program files (x86)\Windows Kits\10\Debuggers\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dcntel.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dcomp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\defragproxy.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\desktopshellext.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\deviceassociation.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\devicecredential.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\devicepairing.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\devobj.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\devrtl.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dhcpcmonitor.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dhcpcsvc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dhcpcsvc6.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\directmanipulation.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dismapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dismcore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\dism\*', @'c:\windows\syswow64\dism\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmcfgutils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmcmnutils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmcommandlineutils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmenrollengine.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmenterprisediagnostics.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmiso8601utils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmoleaututils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmprocessxmlfiltered.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmpushproxy.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dmxmlhelputils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dnsapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dot3api.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dot3cfg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dpx.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\drprov.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\drvstore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dsclient.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dsparse.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dsprop.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dsreg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dsrole.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dui70.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\duser.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dusmapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dwmapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dwmcore.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dwrite.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dxcore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dxgi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dxva2.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dynamoapi.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\eappcfg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\eappprxy.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\edgeiso.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\edputil.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\efsadu.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\efsutil.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\esent.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\execmodelproxy.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\explorerframe.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fastprox.dll' and  not ImageLoaded in~ (@'c:\windows\system32\wbem\*', @'c:\windows\syswow64\wbem\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\faultrep.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fddevquery.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\feclient.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fhcfg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fhsvcctl.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\firewallapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\flightsettings.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fltlib.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\framedynos.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fveapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fveskybackup.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fvewiz.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fwbase.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fwcfg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fwpolicyiomgr.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fwpuclnt.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fxsapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\system32\driverstore\filerepository\prnms002.inf_*\amd64\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fxsst.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\fxstiff.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\system32\driverstore\filerepository\prnms002.inf_*\amd64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\getuname.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\gpapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\hid.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\hnetmon.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\httpapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\icmp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\idstore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ieadvpack.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iedkcs32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iertutil.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ifmon.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ifsutil.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\inproclogger.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iphlpapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iri.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iscsidsc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iscsiexe.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iscsium.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\isv.exe_rsaenh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iumbase.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iumsdk.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\joinutil.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\kdstub.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ksuser.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ktmw32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\licensemanagerapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\licensingdiagspp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\linkinfo.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\loadperf.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\lockhostingframework.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\logoncli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\logoncontroller.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\lpksetupproxyserv.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\lrwizdll.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\magnification.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\maintenanceui.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mapistub.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mbaexmlparser.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mdmdiagnostics.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mfc42u.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mfcore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mfplat.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\microsoft.ui.xaml.xamltypeinfo.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\midimap.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mintdh.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\miutils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mlang.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mmdevapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mobilenetworking.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mpclient.dll' and  not ImageLoaded in~ (@'c:\program files\Windows Defender\*', @'c:\program files (x86)\Windows Defender\*', @'c:\programdata\Microsoft\Windows Defender\Platform\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mpr.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mprapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mpsvc.dll' and  not ImageLoaded =~ @'c:\programdata\Microsoft\Windows Defender\Platform\*\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mrmcorer.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msacm32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mscms.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mscoree.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mscorsvc.dll' and  not ImageLoaded in~ (@'c:\windows\Microsoft.NET\Framework\v*\*', @'c:\windows\Microsoft.NET\Framework64\v*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msctf.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msctfmonitor.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msdrm.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msdtctm.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msftedit.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msiso.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mstracer.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msutb.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msvcp110_win.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msvcr100.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mswb7.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mswsock.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\msxml3.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\mtxclu.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\napinsp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ncrypt.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ndfapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netapi32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netid.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netiohlp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netjoin.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netplwiz.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netprofm.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netprovfw.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netsetupapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netshell.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\nettrace.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\netutils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\networkexplorer.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\newdev.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ninput.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\nlaapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\nlansp_c.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\npmproxy.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\nshhttp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\nshipsec.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\nshwfp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ntdsapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ntlanman.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ntlmshared.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ntmarta.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ntshrui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\oci.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\oleacc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\omadmapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\onex.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\opcservices.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\osbaseln.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\osksupport.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\osuninst.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\p2p.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\p2pnetsh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\p9np.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\pcaui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\pdh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\peerdistsh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\pkeyhelper.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\pla.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\playsndsrv.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\pnrpnsp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\policymanager.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\polstore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\powrprof.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\printui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\prntvpt.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\profapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\propsys.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\proximitycommon.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\proximityservicepal.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\prvdmofcomp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\puiapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\radcui.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rasapi32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rasdlg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rasgcw.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rasman.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rasmontr.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\reagent.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\regapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\reseteng.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\resetengine.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\resutils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rjvplatform.dll' and  not ImageLoaded in~ (@'c:\windows\system32\SystemResetPlatform\*', @'c:\windows\syswow64\SystemResetPlatform\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rmclient.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rpcnsh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rsaenh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rtutils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rtworkq.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\samcli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\samlib.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\sapi_onecore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\sas.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\scansetting.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\scecli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\schedcli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\secur32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\security.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\sensapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\shell32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\shellchromeapi.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\slc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\snmpapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\spectrumsyncclient.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\spp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\sppc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\sppcext.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\srclient.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\srcore.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\srmtrace.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\srpapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\srvcli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ssp.exe_rsaenh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ssp_isv.exe_rsaenh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\sspicli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ssshim.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\staterepository.core.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\structuredquery.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\sxshared.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\systemsettingsthresholdadminflowui.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tapi32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tbs.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tdh.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\textshaping.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\timesync.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tpmcoreprovisioning.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tquery.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\tsworkspace.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\ttdrecord.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\twext.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\twinapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\twinui.appcore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\uianimation.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\uiautomationcore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\uireng.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\uiribbon.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\umpdc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\unattend.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\updatepolicy.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\upshared.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\urlmon.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\userenv.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\utildll.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\uxinit.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\uxtheme.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vaultcli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vdsutil.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\version.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\virtdisk.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vssapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\vsstrace.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wbemprox.dll' and  not ImageLoaded in~ (@'c:\windows\system32\wbem\*', @'c:\windows\syswow64\wbem\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wbemsvc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\wbem\*', @'c:\windows\syswow64\wbem\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wcmapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wcnnetsh.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wdi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wdscore.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\webservices.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wecapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wer.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wevtapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\whhelper.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wimgapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*', @'c:\program files\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\arm64\DISM\*', @'c:\program files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\arm64\DISM\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winbio.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winbrand.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\windows.storage.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\windows.storage.search.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\windows.ui.immersive.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\windowscodecs.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\windowscodecsext.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\windowsperformancerecordercontrol.dll' and  not ImageLoaded in~ (@'c:\program files\windows kits\10\windows performance toolkit\*', @'c:\program files (x86)\windows kits\10\windows performance toolkit\*', @'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\windowsudk.shellcommon.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winhttp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wininet.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winipsec.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winmde.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winmm.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winnsi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winrnr.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winscard.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winsqlite3.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winsta.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\winsync.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wkscli.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wlanapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wlancfg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wlbsctrl.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wldp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wlidprov.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wmiclnt.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wmidcom.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wmiutils.dll' and  not ImageLoaded in~ (@'c:\windows\system32\wbem\*', @'c:\windows\syswow64\wbem\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wmpdui.dll' and  not ImageLoaded =~ @'c:\windows\system32\*' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wmsgapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wofutil.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wpdshext.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wptsextensions.dll' 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wscapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wsdapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wshbth.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wshelper.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wsmsvc.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wtsapi32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wwancfg.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\wwapi.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\xmllite.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\xolehlp.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\xpsservices.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\xwizards.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\xwtpw32.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\atltracetoolui.dll' and  not ImageLoaded in~ (@'c:\program files\Microsoft Visual Studio 11.0\Common7\Tools\*', @'c:\program files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\dbgeng.dll' and  not ImageLoaded in~ (@'c:\program files\Windows Kits\*\Debuggers\x86\*', @'c:\program files (x86)\Windows Kits\*\Debuggers\x86\*', @'c:\program files\Windows Kits\*\Debuggers\x64\*', @'c:\program files (x86)\Windows Kits\*\Debuggers\x64\*', @'c:\program files\Windows Kits\*\Debuggers\arm\*', @'c:\program files (x86)\Windows Kits\*\Debuggers\arm\*', @'c:\program files\Windows Kits\*\Debuggers\arm64\*', @'c:\program files (x86)\Windows Kits\*\Debuggers\arm64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\formdll.dll' and  not ImageLoaded in~ (@'c:\program files\Common Files\Microsoft Shared\NoteSync Forms\*', @'c:\program files (x86)\Common Files\Microsoft Shared\NoteSync Forms\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\gflagsui.dll' and  not ImageLoaded in~ (@'c:\program files\Windows Kits\10\Debuggers\*\*', @'c:\program files (x86)\Windows Kits\10\Debuggers\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\hha.dll' and  not ImageLoaded in~ (@'c:\windows\system32\*', @'c:\windows\syswow64\*', @'c:\program files\HTML Help Workshop\*', @'c:\program files (x86)\HTML Help Workshop\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\iviewers.dll' and  not ImageLoaded in~ (@'c:\program files\Windows Kits\10\bin\*\x86\*', @'c:\program files (x86)\Windows Kits\10\bin\*\x86\*', @'c:\program files\Windows Kits\10\bin\*\x64\*', @'c:\program files (x86)\Windows Kits\10\bin\*\x64\*', @'c:\program files\Windows Kits\10\bin\*\arm\*', @'c:\program files (x86)\Windows Kits\10\bin\*\arm\*', @'c:\program files\Windows Kits\10\bin\*\arm64\*', @'c:\program files (x86)\Windows Kits\10\bin\*\arm64\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\outllib.dll' and  not ImageLoaded in~ (@'c:\program files\Microsoft Office\OFFICE*\*', @'c:\program files (x86)\Microsoft Office\OFFICE*\*', @'c:\program files\Microsoft Office\Root\OFFICE*\*', @'c:\program files (x86)\Microsoft Office\Root\OFFICE*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\rcdll.dll' and  not ImageLoaded in~ (@'c:\program files\Windows Kits\10\bin\*\*\*', @'c:\program files (x86)\Windows Kits\10\bin\*\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\symsrv.dll' and  not ImageLoaded in~ (@'c:\program files\Windows Kits\10\Debuggers\*\*', @'c:\program files (x86)\Windows Kits\10\Debuggers\*\*') 
+---
+SysmonEvent | where ImageLoaded =~ @'*\windowsperformancerecorderui.dll' and  not ImageLoaded in~ (@'c:\program files\Windows Kits\10\Windows Performance Toolkit\*', @'c:\program files (x86)\Windows Kits\10\Windows Performance Toolkit\*') 
+---
